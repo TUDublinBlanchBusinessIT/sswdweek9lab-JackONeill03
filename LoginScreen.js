@@ -10,8 +10,8 @@ export default function LoginScreen({ navigation }) {
 
   const login = () =>
     signInWithEmailAndPassword(auth, email, password)
-      .then(() => Alert.alert("Logged in!"))
-      .catch((e) => Alert.alert("Error", e.message));
+      .then(() => alert("Logged in!"))
+      .catch((e) => alert("Error", e.message));
 
   return (
     <View style={{ flex: 1, justifyContent: "center", padding: 20 }}>
